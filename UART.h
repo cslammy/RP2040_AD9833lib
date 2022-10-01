@@ -11,7 +11,9 @@
 
 
 // global buffer for uart reads
-char uart_buffer[1024]; 
+// newer versions of CMAKE need to see static here?
+//Can no longer correctly infer this?  
+static char uart_buffer[1024]; 
 
 //put this in endless loop in main
 #define READ_UART_BUFFER scanf("%1024s",uart_buffer) 
