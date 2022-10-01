@@ -25,11 +25,11 @@ struct AD9833_C // struct for control data
 };
 
 //buffer global defs
-uint16_t AD9833_CNTL_SPI[1];  //global buffer for AD9833 control SPI writes
-uint16_t AD9833_FREQ_SPI[2];  //global buffer for AD9833 freq SPI writes
-uint16_t AD9833_PHASE_SPI[1]; //global buffer for AD9833 phase SPI writes
+static uint16_t AD9833_CNTL_SPI[1];  //global buffer for AD9833 control SPI writes
+static uint16_t AD9833_FREQ_SPI[2];  //global buffer for AD9833 freq SPI writes
+static uint16_t AD9833_PHASE_SPI[1]; //global buffer for AD9833 phase SPI writes
 
-uint16_t AD9833_init_data[4];  //initialize AD9833 buffer after reset
+static uint16_t AD9833_init_data[4];  //initialize AD9833 buffer after reset
 
 void AD9833_powerup_reset(void);
 
