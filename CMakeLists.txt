@@ -6,7 +6,7 @@ include(pico_sdk_import.cmake)
 #project name and code here
 #project(projectname_here C CXX ASM)
 #for instance:
-project(AD9833DCO C CXX ASM)
+project(AD9833LIB C CXX ASM)
 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
