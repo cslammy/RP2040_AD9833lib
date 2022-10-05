@@ -1,6 +1,12 @@
 #include "pico/stdlib.h"
 #include <stdint.h>
 #include <stdio.h>
+
+uint16_t AD9833_CNTL_SPI[1];  //global buffer for AD9833 control SPI writes
+uint16_t AD9833_FREQ_SPI[2];  //global buffer for AD9833 freq SPI writes
+uint16_t AD9833_PHASE_SPI[1]; //global buffer for AD9833 phase SPI writes
+uint16_t AD9833_init_data[6];  //initialize AD9833 buffer after reset
+
 #include "ad9833.h"
 #include "hex2bin.h"
 #include "spiRP2040.h"
